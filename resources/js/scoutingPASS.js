@@ -186,13 +186,13 @@ function addCounter(table, idx, name, data) {
   button2.setAttribute("value", "+");
   cell2.appendChild(button2);
 
-//  if (data.hasOwnProperty('cycleTimer')) {
-//    if (data.cycleTimer != "") {
-//      inp = document.createElement('input');
-//      inp.setAttribute("hidden", "");
-//      inp.setAttribute("id", "cycleTimer_" + data.code);
-//      inp.setAttribute("value", data.cycleTimer);
-//      cell.appendChild(inp);
+  if (data.hasOwnProperty('cycleTimer')) {
+    if (data.cycleTimer != "") {
+      inp = document.createElement('input');
+      inp.setAttribute("hidden", "");
+      inp.setAttribute("id", "cycleTimer_" + data.code);
+      inp.setAttribute("value", data.cycleTimer);
+      cell.appendChild(inp);
     }
   }
 
@@ -355,13 +355,13 @@ function addClickableImage(table, idx, name, data) {
   }
   cell.appendChild(inp);
 
-//  if (data.hasOwnProperty('cycleTimer')) {
-//    if (data.cycleTimer != "") {
-//      inp = document.createElement('input');
-//      inp.setAttribute("hidden", "");
-//      inp.setAttribute("id", "cycleTimer_" + data.code);
-//      inp.setAttribute("value", data.cycleTimer);
-//      cell.appendChild(inp);
+  if (data.hasOwnProperty('cycleTimer')) {
+    if (data.cycleTimer != "") {
+      inp = document.createElement('input');
+      inp.setAttribute("hidden", "");
+      inp.setAttribute("id", "cycleTimer_" + data.code);
+      inp.setAttribute("value", data.cycleTimer);
+      cell.appendChild(inp);
     }
   }
 
@@ -640,7 +640,7 @@ function addElement(table, idx, data) {
     idx = addCounter(table, idx, name, data);
   } else if ((data.type == 'timer') ||
 	     (data.type == 'cycle')) {
-    //idx = addTimer(table, idx, name, data);
+    idx = addTimer(table, idx, name, data);
   } else {
     console.log(`Unrecognized type: ${data.type}`);
   }
