@@ -2,7 +2,7 @@
 var teams = null;
 var schedule = null;
 var authKey = "Bo2fbHztohCIoPYBhn1VsDPc5hoVVwSx0v86mnPqvOafCxsj3VU2caB71Oo0C5ij";
-var eventCode = "2020ilch"
+var eventCode = "2023vabla"
 /**
  * Get list of teams in event
  *
