@@ -2,12 +2,13 @@
 var teams = null;
 var schedule = null;
 var authKey = "Bo2fbHztohCIoPYBhn1VsDPc5hoVVwSx0v86mnPqvOafCxsj3VU2caB71Oo0C5ij";
+var eventCode = "2023vabla"
 /**
  * Get list of teams in event
  *
  * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
  */
-function getTeams(2020ilch) {
+function getTeams(eventCode) {
 	if (authKey) {
 		var xmlhttp = new XMLHttpRequest();
 		var url = "https://www.thebluealliance.com/api/v3/event/" + eventCode + "/teams/simple";
@@ -29,7 +30,7 @@ function getTeams(2020ilch) {
  *
  * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
  */
-function getSchedule(2020ilch) {
+function getSchedule(eventCode) {
 	if (authKey) {
 		var xmlhttp = new XMLHttpRequest();
 		var url = "https://www.thebluealliance.com/api/v3/event/" + eventCode + "/matches/simple";
