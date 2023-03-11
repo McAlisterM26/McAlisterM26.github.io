@@ -7,7 +7,7 @@ var authKey = "Bo2fbHztohCIoPYBhn1VsDPc5hoVVwSx0v86mnPqvOafCxsj3VU2caB71Oo0C5ij"
  *
  * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
  */
-function getTeams(eventCode) {
+function getTeams(2020ilch) {
 	if (authKey) {
 		var xmlhttp = new XMLHttpRequest();
 		var url = "https://www.thebluealliance.com/api/v3/event/" + eventCode + "/teams/simple";
@@ -29,7 +29,7 @@ function getTeams(eventCode) {
  *
  * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
  */
-function getSchedule(eventCode) {
+function getSchedule(2020ilch) {
 	if (authKey) {
 		var xmlhttp = new XMLHttpRequest();
 		var url = "https://www.thebluealliance.com/api/v3/event/" + eventCode + "/matches/simple";
